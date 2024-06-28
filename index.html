@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Perfil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <label for="profile-upload">Selecionar imagem:</label>
+        <input type="file" id="profile-upload" name="profile-upload">
+        <h2>Cadastro de Perfil</h2>
+        <form action="#" method="post">
+            <input type="text" name="username" placeholder="usuário" required><br>
+            <input type="password" name="password" placeholder="senha" required><br>
+            <input type="text" name="endereco" placeholder="endereço" required><br>
+            <input type="text" name="cidade" placeholder="cidade" required><br>
+            <label>
+                <input type="radio" name="nationality" value="brasileiro" required> brasileiro
+            </label>
+            <label>
+                <input type="radio" name="nationality" value="estrangeiro" required> estrangeiro
+            </label><br>
+            <br>
+            <label>
+                <input type="checkbox" name="confirm" required> Confirmo os dados do cadastro
+            </label><br>
+            <br>
+            <button type="button" class="abort-button">Cancelar</button>
+            <button type="submit" class="confirm-button">Confirmar</button>
+        </form>
+    </div>
+</body>
+</html>
+
